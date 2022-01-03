@@ -10,6 +10,7 @@ public class LineComparison {
 		System.out.println("Welcome to Line comparison program");
 		lengthofLine();
 		distance();
+		equality();
 	}
 
 	public static void lengthofLine() {
@@ -39,4 +40,12 @@ public class LineComparison {
 		System.out.println("Distance 2 = " + distance2);
 
 	}
+	public static void equality() {
+		if (distance1 == distance2)
+			System.out.print("Length are same ");
+		else if (distance1 > distance2)
+			System.out.print(" Length of the Line One is greater ");
+		else
+			System.out.println(" Length of the Line Two is greater ");
+	    }
 }
